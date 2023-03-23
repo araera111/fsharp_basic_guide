@@ -69,4 +69,19 @@ let r14 = not (str1 = "str1") // false
 *)
 let r15 = if false then "A" else "B"
 
-(*  *)
+(*
+  関数のつくりかた
+  const add = (num1:number, num2:number):number => num1 + num2;
+ *)
+
+(* こんな風に簡潔に書けます *)
+let add num1 num2 = num1 + num2
+
+(* デフォルト引数はありません。クラスのメソッドなら使えるらしいです。 *)
+
+
+(* 条件分岐
+  if boolean then true処理 else false処理と書く。必ずelse処理が必要。
+*)
+let tenVal = 10
+let r16 = if tenVal > 100 then add 2 3 else add 3 3
